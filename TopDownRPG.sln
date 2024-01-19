@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopDownRPG.Windows", "TopDownRPG.Windows\TopDownRPG.Windows.csproj", "{BCD87606-3660-43D2-A667-538EA5C533BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopDownRPG.Game", "TopDownRPG.Game\TopDownRPG.Game.csproj", "{7AA71211-01F0-4CC8-9855-DC822C070F08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopDownRPG.WinForms", "TopDownRPG.WinForms\TopDownRPG.WinForms.csproj", "{5CE2F035-5C41-49EE-B376-0D0051B33361}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopDownRPG.Avalonia", "TopDownRPG.Avalonia\TopDownRPG.Avalonia.csproj", "{B053887D-F9BD-44DB-85E2-5918512305D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopDownRPG.Avalonia.Desktop", "TopDownRPG.Avalonia.Desktop\TopDownRPG.Avalonia.Desktop.csproj", "{A0188CBB-7B8F-48E7-A608-72981BC37C9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCD87606-3660-43D2-A667-538EA5C533BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCD87606-3660-43D2-A667-538EA5C533BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCD87606-3660-43D2-A667-538EA5C533BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCD87606-3660-43D2-A667-538EA5C533BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA71211-01F0-4CC8-9855-DC822C070F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA71211-01F0-4CC8-9855-DC822C070F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA71211-01F0-4CC8-9855-DC822C070F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA71211-01F0-4CC8-9855-DC822C070F08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CE2F035-5C41-49EE-B376-0D0051B33361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE2F035-5C41-49EE-B376-0D0051B33361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE2F035-5C41-49EE-B376-0D0051B33361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE2F035-5C41-49EE-B376-0D0051B33361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B053887D-F9BD-44DB-85E2-5918512305D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B053887D-F9BD-44DB-85E2-5918512305D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B053887D-F9BD-44DB-85E2-5918512305D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B053887D-F9BD-44DB-85E2-5918512305D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0188CBB-7B8F-48E7-A608-72981BC37C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0188CBB-7B8F-48E7-A608-72981BC37C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0188CBB-7B8F-48E7-A608-72981BC37C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0188CBB-7B8F-48E7-A608-72981BC37C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70E5AC32-5D9B-4852-9976-E7E16BF40CFB}
+	EndGlobalSection
+EndGlobal

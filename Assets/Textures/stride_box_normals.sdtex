@@ -1,0 +1,6 @@
+!Texture
+Id: e85c7e56-bd19-41c0-a7e3-586b1948e14b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Textures/stride_box_normals.png
+Type: !NormalMapTextureType {}
