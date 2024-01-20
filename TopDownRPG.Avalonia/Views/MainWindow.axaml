@@ -4,9 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:TopDownRPG.Avalonia.Views"
+		xmlns:local="clr-namespace:TopDownRPG.Avalonia.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="TopDownRPG.Avalonia.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="TopDownRPG.Avalonia">
-        <views:MainView />
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<TextBlock Grid.Row="0" TextWrapping="Wrap">
+			This is a Stride game embedded in an Avalonia application
+		</TextBlock>
+
+		<GridSplitter Grid.Row="1" Width="8"/>
+
+		<local:GameControl Grid.Row="2"/>
+
+	</Grid>
 </Window>

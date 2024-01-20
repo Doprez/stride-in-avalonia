@@ -14,9 +14,6 @@ namespace TopDownRPG.Avalonia.Views;
 
 public partial class GameControl : NativeControlHost
 {
-    public nint Handle { get; private set; }
-
-
 	private Game? _game; 
 	private Stride.Graphics.SDL.Window? _sdlWindow;
 
@@ -29,23 +26,26 @@ public partial class GameControl : NativeControlHost
 	{
 		InvalidateMeasure(); // force refresh
 		var context = new GameContextSDL(_sdlWindow, _sdlWindow.Size.Width, _sdlWindow.Size.Height);
-
+		
 		// Start the game
 		_game = new();
-		Task.Factory.StartNew(() =>
-		{
-			// Running the game in its own task allows rendering while
-			// dragging and resizing the window.
-			_game.Run(context);
-		}, TaskCreationOptions.LongRunning);
+
+
+		_game.Run(context);
+		//Task.Factory.StartNew(() =>
+		//{
+		//	// Running the game in its own task allows rendering while
+		//	// dragging and resizing the window.
+		//	_game.Run(context);
+		//}, TaskCreationOptions.LongRunning);
 	}
 
 	protected override IPlatformHandle CreateNativeControlCore(IPlatformHandle parent)
 	{
+		var handle = base.CreateNativeControlCore(parent);
+		
 		// Create SDL window using child
-		_sdlWindow = new Stride.Graphics.SDL.Window("Embedded Stride Window", parent.Handle);
-
-		Handle = parent.Handle;
+		_sdlWindow = new Stride.Graphics.SDL.Window("Embedded Stride Window", handle.Handle);
 
         return new PlatformHandle(_sdlWindow.Handle, "Sdl2Hwnd");
     }
